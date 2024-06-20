@@ -1,6 +1,6 @@
-Ejemplo del código para el uso de overlap
+Ejemplo del código
 
-library(overlap)
+library(camtrapR)
 Data_mam <- read.csv("record-table_2024-05-31_2008.csv", header = T)
 #Se selecciona el reporte “CamtrapR Record Table” de Camelot y se carga al script
 activityOverlap(recordTable = Data_mam, speciesA = "Pecari tajacu", speciesB = "Nasua narica", speciesCol = "Species", recordDateTimeCol = "DateTimeOriginal", recordDateTimeFormat = "ymd HMS", addLegend = TRUE, legendPosition = "topleft", pngMaxPix = 1000, add.rug = TRUE, overlapEstimator = c("Dhat4")) 
